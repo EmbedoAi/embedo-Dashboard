@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 185 40% 6%;
+    --card: 0 0% 100%;
+    --card-foreground: 185 40% 6%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 185 40% 6%;
+    --primary: 178 100% 30%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 180 30% 96%;
+    --secondary-foreground: 185 40% 6%;
+    --muted: 180 30% 96%;
+    --muted-foreground: 195 8% 41%;
+    --accent: 178 65% 92%;
+    --accent-foreground: 185 40% 6%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 178 50% 92%;
+    --input: 180 40% 96%;
+    --ring: 178 100% 30%;
+    --chart-1: 178 100% 30%;
+    --chart-2: 176 76% 53%;
+    --chart-3: 189 47% 24%;
+    --chart-4: 172 34% 68%;
+    --chart-5: 0 84.2% 65%;
+    --radius: 0.6rem;
+
+    --sidebar-background: 189 47% 10%;
+    --sidebar-foreground: 178 65% 92%;
+    --sidebar-primary: 178 100% 30%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 189 40% 15%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 189 40% 16%;
+    --sidebar-ring: 178 100% 30%;
+
+    /* Embedo brand tokens */
+    --embedo-black: #021316;
+    --embedo-navy: #06262b;
+    --embedo-panel: #0a3a40;
+    --embedo-tech: #075f69;
+    --embedo-logo: #019893;
+    --embedo-cyan: #20e6e0;
+    --embedo-mint: #9cd7d5;
+    --embedo-soft: #eaf6f6;
+    --embedo-alert: #ff4d4d;
+
+    /* Embedo semantic theme tokens */
+    --eo-bg: #ffffff;
+    --eo-surface: #ffffff;
+    --eo-surface-alt: #f4f9fb;
+    --eo-text: #021316;
+    --eo-muted: #5c6b73;
+    --eo-border: #eaf6f6;
+    --eo-input: #f4f9fb;
+    --eo-soft: #eaf6f6;
+  }
+
+  .dark {
+    --background: 185 35% 6%;
+    --foreground: 0 0% 98%;
+    --card: 185 25% 10%;
+    --card-foreground: 0 0% 98%;
+    --popover: 185 25% 10%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 176 76% 53%;
+    --primary-foreground: 185 35% 6%;
+    --secondary: 185 20% 14%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 185 20% 14%;
+    --muted-foreground: 180 8% 65%;
+    --accent: 185 20% 14%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 185 20% 16%;
+    --input: 185 20% 12%;
+    --ring: 176 76% 53%;
+    --chart-1: 176 76% 53%;
+    --chart-2: 178 100% 30%;
+    --chart-3: 172 34% 68%;
+    --chart-4: 189 47% 24%;
+    --chart-5: 0 84.2% 65%;
+
+    --sidebar-background: 189 47% 8%;
+    --sidebar-foreground: 178 65% 92%;
+    --sidebar-primary: 176 76% 53%;
+    --sidebar-primary-foreground: 185 35% 6%;
+    --sidebar-accent: 189 40% 14%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 189 40% 16%;
+    --sidebar-ring: 176 76% 53%;
+
+    --eo-bg: #051418;
+    --eo-surface: #0e1f23;
+    --eo-surface-alt: #0a1b1f;
+    --eo-text: #eaf6f6;
+    --eo-muted: #7a8c92;
+    --eo-border: #1a2e31;
+    --eo-input: #0a1b1f;
+    --eo-soft: #0a3a40;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
